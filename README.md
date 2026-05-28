@@ -14,7 +14,8 @@
 * **从 0 到 1 跨网段交付：** 引入虚拟覆盖网络穿透隔离，基于 Docker 与无状态 gRPC 网关实现云边解耦与断点容灾。
 
 
-<img width="2355" height="1059" alt="1-1" src="https://github.com/user-attachments/assets/c9d2d735-d4c3-4710-8dcf-a60dbb9e2d7b" />
+<img width="2343" height="1056" alt="image" src="https://github.com/user-attachments/assets/eca7a212-37ec-4b16-a8d1-f557fed473f1" />
+
 
 *图 1-1：系统架构图*
 
