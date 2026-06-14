@@ -20,9 +20,9 @@
 <br>
 
 
-<video width="640" controls>
+[<video width="640" controls>
   <source src="https://github.com/CuiJixuan/JixuanCui-ProjectInfo/blob/main/%E6%BC%94%E7%A4%BA1-1.mp4" type="video/mp4">
-</video>
+</video>](https://github.com/CuiJixuan/JixuanCui-ProjectInfo/blob/main/%E6%BC%94%E7%A4%BA1-1.mp4)
 
 *演示 1-1： Agent实机演示视频,支持数据分析、模型训练、总结分析以及普通闲聊*
 
