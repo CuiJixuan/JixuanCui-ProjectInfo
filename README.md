@@ -19,7 +19,13 @@
 
 <br>
 
-[![Watch the demo](assets/demo-cover.png)](https://github.com/CuiJixuan/JixuanCui-ProjectInfo/raw/refs/heads/main/demo1-1.mp4)
+
+
+<video 
+  src="https://github.com/CuiJixuan/JixuanCui-ProjectInfo/raw/refs/heads/main/demo1-1.mp4" 
+  controls 
+  width="800">
+</video>
 
 
 *演示 1-1： Agent实机演示视频,支持数据分析、模型训练、总结分析以及普通闲聊*
