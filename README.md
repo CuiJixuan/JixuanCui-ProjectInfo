@@ -19,9 +19,10 @@
 
 <br>
 
-<video width="640" controls>
-  <source src="https://github.com/CuiJixuan/JixuanCui-ProjectInfo/raw/main/%E6%BC%94%E7%A4%BA1-1.mp4" type="video/mp4">
-  你的浏览器不支持视频播放，请点击链接查看：https://github.com/CuiJixuan/JixuanCui-ProjectInfo/blob/main/%E6%BC%94%E7%A4%BA1-1.mp4
+<video 
+  src="https://github.com/CuiJixuan/JixuanCui-ProjectInfo/raw/refs/heads/main/%E6%BC%94%E7%A4%BA1-1.mp4" 
+  controls 
+  width="800">
 </video>
 
 
@@ -62,7 +63,7 @@
 
 https://github.com/user-attachments/assets/cffe03d4-1f82-4ce4-a852-e5aad1fee06d
 
-*演示 1：基于 Tauri 提权静默抓取 28 项生化指标，完成毫无卡顿的毫秒级无感推理*
+*演示 2-1：基于 Tauri 提权静默抓取 28 项生化指标，完成毫无卡顿的毫秒级无感推理*
 
 <br>
 
