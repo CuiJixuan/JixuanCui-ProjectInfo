@@ -19,14 +19,41 @@
 
 <br>
 
+<img width="1884" height="630" alt="image" src="https://github.com/user-attachments/assets/08b15668-26b4-4822-8e48-4fcefda18ff5" />
+
+*图  1-2：闲聊测试：当被问起与主业无关的事情，Agent能够从容应对*
+
+<br>
 
 
-<video 
-  src="https://github.com/CuiJixuan/JixuanCui-ProjectInfo/raw/refs/heads/main/demo1-1.mp4" 
-  controls 
-  width="800">
-</video>
+<img width="1872" height="573" alt="image" src="https://github.com/user-attachments/assets/2519e5e7-c61e-4b90-adef-e78a40372851" />
 
+
+*图  1-3：任务类型1——数据分析, 针对产线新数据，检测数据基本情况，为后续模型训练提供依据
+*
+
+<br>
+
+
+<img width="1835" height="678" alt="image" src="https://github.com/user-attachments/assets/df63b1be-7aab-4608-b2f0-29b3d3a469b5" />
+
+
+*图  1-4：任务类型2——模型训练, 根据数据特性推荐算法，并完成训练，展示结果*
+
+<br>
+
+
+<img width="1428" height="471" alt="image" src="https://github.com/user-attachments/assets/7f9e4c8f-3c1a-41f7-a010-cee9c94ac9aa" />
+
+
+
+*图  1-5：任务类型3——总结分析, 根据实验结果进一步分析优化方向，实现迭代优化*
+
+<br>
+
+
+
+🎬 [视频过大无法内嵌, 可点击观看~](https://github.com/CuiJixuan/JixuanCui-ProjectInfo/raw/refs/heads/main/demo1-1.mp4)
 
 *演示 1-1： Agent实机演示视频,支持数据分析、模型训练、总结分析以及普通闲聊*
 
