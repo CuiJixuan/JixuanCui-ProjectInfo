@@ -1,49 +1,37 @@
-# 崔继轩 - AI 算法工程师项目汇报
+<img width="198" height="81" alt="image" src="https://github.com/user-attachments/assets/baa2746e-3330-4178-a114-118f63687771" /># 崔继轩 - AI 算法工程师项目汇报
 
-您好！我是崔继轩。本仓库提炼了我在简历中向您汇报的，真实工业/医疗场景下的核心 AI 算法项目，重点展示了在**基座模型微调、多模态异构联邦、扩散模型数据增广及轻量化离线部署**等方向的可视化成果与工程实践。
+您好！我是崔继轩。本仓库提炼了我在简历中向您汇报的，真实工业/医疗场景下的核心 AI 算法项目，重点展示了在**智能体搭建、基座模型微调、联邦学习、扩散模型**等方向的工程实践。
 
 ---
+## 1. 基于 LangGraph 的工业基座模型微调 Agent 系统
+> **关键词：** LangGraph + RAG + SQLite | LoRA微调 | Agent 搭建
 
-## 1. 基于联邦学习的分布式多模态基座模型微调平台
-> **关键词：** 云边协同架构 | 基座模型+LoRA | 全场景异构适配算法 | 全链路跨网段联调
-
-**项目背景：** 依托工信部创新发展工程项目（1.75亿），解决工业边缘侧数据孤岛、多维异构（分布/算力/内存/带宽）及隐私安全痛点。
+**项目背景：** 针对工业模型训练中算法选型依赖人工、流程割裂与状态难追踪等问题，开发面向本地微调的对话式 Agent 系统，打通意图解析、计划生成、任务执行、结果展示与计划迭代闭环。
 **核心亮点：**
-* **架构解耦与算法集成：** 主导设计底层网关与算法解耦架构。集成 INT8+LoRA 降低算力门槛，支持 SFL 分割联邦极致压缩带宽开销，结合 LDP 构筑安全壁垒。
-* **全场景异构感知：** 针对模态、数据、内存、算力四维异构，定制图信息瓶颈 GIB、双轨近端正则、秩异构 LoRA 蒸馏及异步聚合机制。
-* **从 0 到 1 跨网段交付：** 引入虚拟覆盖网络穿透隔离，基于 Docker 与无状态 gRPC 网关实现云边解耦与断点容灾。
+* **对话式任务编排（理解、检索、规划）**：基于 LangGraph 构建 10 类命令路由，覆盖问答、RAG 检索、计划生成/修改、执行/取消、进度与结果查询；结合本地知识库与策略推荐模块，根据自然语言需求设计针对具体任务的特性分析、策略推荐、计划生成。
+* **迭代式训练优化（记忆、执行、反馈）**：以 SQLite 构建任务状态记忆，持久化计划、运行、结果与错误信息；封装数据画像、配置生成、模型构建、训练推理、评测报告等工具，由 Worker 执行长时任务，并回传进度与失败诊断，支撑模型训练与优化的自动闭环。
 
 
-<img width="2343" height="1056" alt="image" src="https://github.com/user-attachments/assets/eca7a212-37ec-4b16-a8d1-f557fed473f1" />
 
+<img width="1881" height="786" alt="图1-1" src="https://github.com/user-attachments/assets/6abd210a-1db4-4e9b-a4e4-9c297bffdea6" />
 
-*图 1-1：系统架构图*
-
-<br>
-
-<img width="2274" height="963" alt="1-2" src="https://github.com/user-attachments/assets/1eb12ae6-e39b-459a-a3b7-0d452842721f" />
-
-
-*图 1-2：服务端控制台*
+*图  1-1：系统架构图*
 
 <br>
 
-<img width="1740" height="504" alt="1-3" src="https://github.com/user-attachments/assets/4eb4b2ae-7c40-4185-a8c2-ff990f75d5ba" />
 
 
-*图 1-3：全链路监测大屏（展示多用户并发下的测试准确率）*
 
-<br>
-
-<img width="1770" height="591" alt="1-4" src="https://github.com/user-attachments/assets/a637e776-deb8-40a2-b21d-b71f16051338" />
+*演示 1-1： Agent实机演示视频,支持数据分析、模型训练、总结分析以及普通闲聊*
 
 
-*图 1-4：用户端大屏*
 
 <br>
 <br>
 
 ---
+
+
 
 ## 2. 基于扩散生成模型的医疗重症辅助诊断桌面系统
 > **关键词：** 扩散生成模型 (DDPM) | Tauri+Vue3 原生调用 | ONNX 毫秒级极简推理
@@ -83,36 +71,45 @@ https://github.com/user-attachments/assets/cffe03d4-1f82-4ce4-a852-e5aad1fee06d
 <br>
 
 ---
+## 3. 基于联邦学习的分布式多模态基座模型微调平台
+> **关键词：** 云边协同架构 | 基座模型+LoRA | 全场景异构适配算法 | 全链路跨网段联调
 
-## 3. 基于视觉基座模型微调的复杂时变工况缺陷分类系统
-> **关键词：** RsLoRA 高秩抗噪 | 重参数化模型折叠 | ONNX 跨端部署
-
-**项目背景：** 面向恶劣工业时变工况（噪声、模糊、光照畸变交织），突破传统微调的高秩退化瓶颈，并实现厂区老旧工控机免环境部署。
+**项目背景：** 依托工信部创新发展工程项目（1.75亿），解决工业边缘侧数据孤岛、多维异构（分布/算力/内存/带宽）及隐私安全痛点。
 **核心亮点：**
-* **双轨抗噪优化（结构扩充 & 方差稳定）**：针对传统 LoRA 在干扰下性能坍塌与高秩时信号衰减等问题，提出并行双旁路架构以扩充模型在多维时变干扰下的表征容量，配合修正缩放因子稳定特征方差以产生平滑正则化效应抵抗噪声。在小样本+混合干扰下，Rank=64时性能超越开销更大的Adapter等算法，Rank=256 时准确率达 84.67%，较传统 LoRA 绝对提升 16.67%。
-* **极简离线部署（重参数化 & ONNX）**：利用重参数化将 LoRA 增量矩阵无损折叠至主干网络，实现推理端“0参数膨胀与0延迟增长”；将计算图静态化编译为 ONNX 格式彻底剥离 Python 依赖，以极小体积在老旧厂区终端上实现跨 CPU/GPU 的低资源离线推理。
+* **架构解耦与算法集成：** 主导设计底层网关与算法解耦架构。集成 INT8+LoRA 降低算力门槛，支持 SFL 分割联邦极致压缩带宽开销，结合 LDP 构筑安全壁垒。
+* **全场景异构感知：** 针对模态、数据、内存、算力四维异构，定制图信息瓶颈 GIB、双轨近端正则、秩异构 LoRA 蒸馏及异步聚合机制。
+* **从 0 到 1 跨网段交付：** 引入虚拟覆盖网络穿透隔离，基于 Docker 与无状态 gRPC 网关实现云边解耦与断点容灾。
 
 
-<img width="1467" height="728" alt="image" src="https://github.com/user-attachments/assets/ca989b84-085a-4079-a8a8-b7136a9104c3" />
+<img width="2343" height="1056" alt="image" src="https://github.com/user-attachments/assets/eca7a212-37ec-4b16-a8d1-f557fed473f1" />
 
 
-*图  3-1：算法流程图*
-
-<br>
-
-<img width="1793" height="767" alt="image" src="https://github.com/user-attachments/assets/f0d0e6ed-1ef7-40a7-bb69-790ac6e42df5" />
-
-
-*图 3-2： 无干扰工况测试，极低开销逼近全量微调上限（93.00% vs. 94.33%）, 超越传统LoRA（85.33%）以及开销更高的Adapter（91.33%）*
+*图 3-1：系统架构图*
 
 <br>
 
-<img width="1778" height="755" alt="image" src="https://github.com/user-attachments/assets/ea372b1f-07e1-4a7d-990b-293b141c1fbf" />
+<img width="2274" height="963" alt="1-2" src="https://github.com/user-attachments/assets/1eb12ae6-e39b-459a-a3b7-0d452842721f" />
 
-*图  3-3：混合干扰工况测试，Rank=64时性能超越开销更大的Adapter等算法，Rank=256 时准确率达 84.67%，较传统 LoRA 绝对提升 16.67%*
+
+*图 3-2：服务端控制台*
+
+<br>
+
+<img width="1740" height="504" alt="1-3" src="https://github.com/user-attachments/assets/4eb4b2ae-7c40-4185-a8c2-ff990f75d5ba" />
+
+
+*图 3-3：全链路监测大屏（展示多用户并发下的测试准确率）*
+
+<br>
+
+<img width="1770" height="591" alt="1-4" src="https://github.com/user-attachments/assets/a637e776-deb8-40a2-b21d-b71f16051338" />
+
+
+*图 3-4：用户端大屏*
 
 <br>
 <br>
 
 ---
+
 📫 **联系方式:** jixuancui@njust.edu.cn | 📱 13966116170
