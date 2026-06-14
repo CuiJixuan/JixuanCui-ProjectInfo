@@ -53,7 +53,7 @@
 
 
 
-🎬 [视频过大无法内嵌, 可点击观看~](https://github.com/CuiJixuan/JixuanCui-ProjectInfo/main/demo1-1.mp4)
+🎬 [视频过大无法内嵌, 可点击观看~]([https://github.com/CuiJixuan/JixuanCui-ProjectInfo/main/demo1-1.mp4](https://github.com/CuiJixuan/JixuanCui-ProjectInfo/blob/main/demo1-1.mp4))
 
 *演示 1-1： Agent实机演示视频,支持数据分析、模型训练、总结分析以及普通闲聊*
 
