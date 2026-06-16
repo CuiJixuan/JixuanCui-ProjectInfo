@@ -1,4 +1,4 @@
-# 崔继轩 - AI 算法工程师项目汇报
+<img width="1957" height="81" alt="image" src="https://github.com/user-attachments/assets/64e4f58a-bfc5-49df-ac21-21d73721162c" /># 崔继轩 - AI 算法工程师项目汇报
 
 您好！我是崔继轩。本仓库提炼了我在简历中向您汇报的，真实工业/医疗场景下的核心 AI 算法项目，重点展示了在**智能体搭建、基座模型微调、扩散模型、联邦学习**等方向的工程实践。
 
@@ -79,12 +79,26 @@ https://github.com/user-attachments/assets/1762e5ff-44d5-4aa9-9869-34c6440bbfbb
 * **极简离线部署（重参数化 & ONNX）：** 面向厂区终端算力有限问题，设计训练期扩容——推理期折叠的重参数化部署方案，双旁路增量矩阵无损合并至主干网络权重，使推理阶段无需额外加载 LoRA 分支，实现参数结构回收与推理图简化，实现推理端“0参数膨胀与0延迟增长”；针对网络环境受限和依赖难维护等部署约束，将计算图静态化编译为 ONNX 格式彻底剥离 Python 依赖，以极小体积在老旧厂区终端上实现跨平台跨 CPU/GPU 的低资源离线推理。
 
 
+<img width="939" height="466" alt="架构图" src="https://github.com/user-attachments/assets/653944a4-f73b-4185-b33a-655e14da5c2d" />
 
 
 *图 2-1：项目流程图*
 
 <br>
 
+<img width="1147" height="492" alt="图片1" src="https://github.com/user-attachments/assets/03c1df4d-30da-412a-93b6-f4587d4cd9a3" />
+
+
+*图 2-2：无噪声干扰下实验结果：Rank=64时性能超越开销更大的Adapter等算法，Rank=256 时准确率达 93.00%，较传统 LoRA 绝对提升 4.67%*
+
+<br>
+
+
+<img width="1138" height="483" alt="图片2" src="https://github.com/user-attachments/assets/50fbc5c1-5933-482b-bc36-e78fdb2e3230" />
+
+*图 2-3：混合噪声干扰下实验结果：Rank=64时性能超越开销更大的Adapter等算法，Rank=256 时准确率达 83.67%，较传统 LoRA 绝对提升 13.01%*
+
+<br>
 
 
 
