@@ -29,8 +29,7 @@
 <img width="1872" height="573" alt="image" src="https://github.com/user-attachments/assets/2519e5e7-c61e-4b90-adef-e78a40372851" />
 
 
-*图  1-3：任务类型1——数据分析, 针对产线新数据，检测数据基本情况，为后续模型训练提供依据
-*
+*图  1-3：任务类型1——数据分析, 针对产线新数据，检测数据基本情况，为后续模型训练提供依据*
 
 <br>
 
