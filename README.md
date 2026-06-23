@@ -1,4 +1,4 @@
-<img width="1957" height="81" alt="image" src="https://github.com/user-attachments/assets/64e4f58a-bfc5-49df-ac21-21d73721162c" /># 崔继轩 - AI 算法工程师项目汇报
+# 崔继轩 - AI 算法工程师项目汇报
 
 您好！我是崔继轩。本仓库提炼了我在简历中向您汇报的，真实工业/医疗场景下的核心 AI 算法项目，重点展示了在**智能体搭建、基座模型微调、扩散模型、联邦学习**等方向的工程实践。
 
