@@ -34,7 +34,7 @@
 <img width="1420" height="747" alt="image" src="https://github.com/user-attachments/assets/3be39ee8-bbac-4bfa-8c5c-7087e79b7e22" />
 
 
-*图 1-2：工业 Agent Skills *
+*图 1-2：工业 Agent Skills*
 
 <br>
 
