@@ -10,7 +10,7 @@
 
 **项目概况：** 面向本地工业模型开发，构建对话式多智能体系统，实现需求理解、知识检索、实验执行与迭代复盘闭环。
 
-**项目产出：** Agent 软件系统 1 套。
+**项目产出：** Agent 软件系统 1 套，含 8 个 Agent Skills 及 100 余个本地及 MCP 工具。
 
 ### 核心亮点
 
@@ -22,33 +22,43 @@
 
 <!-- 图 1-1 如仍为旧版单 Agent 架构，请替换为最新 Supervisor + Experts 多智能体架构图。 -->
 
-<img width="1881" height="786" alt="工业模型开发 Agent 系统架构图" src="https://github.com/user-attachments/assets/6abd210a-1db4-4e9b-a4e4-9c297bffdea6" />
+
+<img width="1273" height="651" alt="image" src="https://github.com/user-attachments/assets/04e06423-023b-4076-ac96-0ae2ae5d3605" />
+
 
 *图 1-1：工业模型开发 Agent 系统架构图*
 
 <br>
 
+
+<img width="1420" height="747" alt="image" src="https://github.com/user-attachments/assets/3be39ee8-bbac-4bfa-8c5c-7087e79b7e22" />
+
+
+*图 1-2：工业 Agent Skills *
+
+<br>
+
 <img width="1884" height="630" alt="通用问答测试" src="https://github.com/user-attachments/assets/08b15668-26b4-4822-8e48-4fcefda18ff5" />
 
-*图 1-2：通用问答测试——系统能够识别非任务型请求并完成正常交互*
+*图 1-3：通用问答测试——系统能够识别非任务型请求并完成正常交互*
 
 <br>
 
 <img width="1872" height="573" alt="工业数据诊断" src="https://github.com/user-attachments/assets/2519e5e7-c61e-4b90-adef-e78a40372851" />
 
-*图 1-3：数据诊断——分析产线数据规模、类别分布、噪声与潜在风险*
+*图 1-4：数据诊断——分析产线数据规模、类别分布、噪声与潜在风险*
 
 <br>
 
 <img width="1835" height="678" alt="模型训练任务" src="https://github.com/user-attachments/assets/df63b1be-7aab-4608-b2f0-29b3d3a469b5" />
 
-*图 1-4：实验执行——根据数据特性生成方案、调用工具并完成模型训练*
+*图 1-5：实验执行——根据数据特性生成方案、调用工具并完成模型训练*
 
 <br>
 
 <img width="1428" height="471" alt="实验结果分析" src="https://github.com/user-attachments/assets/7f9e4c8f-3c1a-41f7-a010-cee9c94ac9aa" />
 
-*图 1-5：结果复盘——分析实验结果并生成下一轮优化方向*
+*图 1-6：结果复盘——分析实验结果并生成下一轮优化方向*
 
 <br>
 
@@ -67,7 +77,7 @@ https://github.com/user-attachments/assets/1762e5ff-44d5-4aa9-9869-34c6440bbfbb
 
 **项目概况：** 针对工业缺陷分类中的小样本与多维干扰问题，提出抗干扰参数高效微调方法，并完成重参数化与 ONNX 部署。
 
-**项目产出：** 算法模型 1 套。
+**项目产出：** TCD-LoRA 算法模型 1 套，Atlas NPU 实板部署原型 1 套。
 
 ### 核心亮点
 
@@ -83,23 +93,49 @@ https://github.com/user-attachments/assets/1762e5ff-44d5-4aa9-9869-34c6440bbfbb
 3. ONNX、Dynamic INT8、Static INT8 QDQ 的部署测试结果。
 -->
 
-<!-- 在此插入最新 TCD-LoRA 架构图 -->
+<img width="1588" height="690" alt="image" src="https://github.com/user-attachments/assets/0c830ef2-67bd-437c-b68d-bb9289735d1f" />
+
 
 *图 2-1：TCD-LoRA 双专家抗扰微调架构*
 
 <br>
 
-<!-- 在此插入最新鲁棒性实验结果图 -->
+<img width="1007" height="669" alt="image" src="https://github.com/user-attachments/assets/a12daee6-980d-452a-841b-f1191d22f1e1" />
+
 
 *图 2-2：不同 Rank 下 TCD-LoRA 与参数高效微调方法的受扰工况对比*
 
 <br>
 
-<!-- 在此插入最新 ONNX 与 INT8 部署测试图 -->
+<img width="803" height="257" alt="image" src="https://github.com/user-attachments/assets/06b7d504-596b-43b6-b662-7f976599e73f" />
 
 *图 2-3：ONNX 数值对齐、模型压缩及 Windows x86 CPU 推理测试结果*
 
 <br>
+
+<img width="875" height="556" alt="image" src="https://github.com/user-attachments/assets/eb4f81fc-5c65-4940-b50e-8446bc534d1e" />
+
+
+*图 2-4：延迟测试*
+
+<br>
+
+<img width="955" height="633" alt="image" src="https://github.com/user-attachments/assets/f26c1423-dbd5-4dc1-84b0-5537fd8cb18b" />
+
+
+*图 2-5：吞吐测试*
+
+<br>
+
+
+<img width="997" height="633" alt="image" src="https://github.com/user-attachments/assets/bf700670-0dc9-4fa2-b475-f0b4a89a7a8b" />
+
+
+*图 2-6：内存显存增量测试*
+
+<br>
+
+
 <br>
 
 ---
